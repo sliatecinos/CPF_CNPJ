@@ -1,10 +1,10 @@
-CPF_CNPJ
-========
+BR registrations
+================
 |build-status|
 
-.. |build-status| image:: https://img.shields.io/github/license/sliatecinos/CPF_CNPJ?style=plastic
-    :alt: GitHub license
-    :target: https://github.com/sliatecinos/CPF_CNPJ/blob/main/LICENSE
+.. |build-status| image:: https://img.shields.io/github/license/sliatecinos/br_registrations?style=plastic
+    :alt: GitHub license   
+    :target: https://github.com/sliatecinos/br_registrations/blob/master/LICENSE.txt
 
 
 **Project description**
@@ -19,7 +19,7 @@ Originally developed and open-sourced at `Sliatecinos (GitHub) <https://github.c
 ----------------
 .. begin-installation
 
-``pip install CPF_CNPJ``
+``pip install br_registrations``
 
 .. end-installation
 
@@ -29,7 +29,7 @@ Originally developed and open-sourced at `Sliatecinos (GitHub) <https://github.c
 
 .. code:: python
 
-    from CPF_CNPJ import validateCNPJ, validateCPF
+    from br_registrations import validateCNPJ, validateCPF
 
     # Validation test of registration CNPJ number
     # Instances the validation:
@@ -40,7 +40,7 @@ Originally developed and open-sourced at `Sliatecinos (GitHub) <https://github.c
     print('CNPJ is valid is', response, '.')
 
     # Passing a registration number of CNPJ (in string format):
-    dv=ret_CNPJ.return_cnpj_dv('112223330001')
+    dv=ret_CNPJ.get_cnpj_dv('112223330001')
     print('Correct DV: ', dv)
     # Output (in list): 'Correct DV:  [8, 1]'
 
@@ -55,7 +55,7 @@ Originally developed and open-sourced at `Sliatecinos (GitHub) <https://github.c
     print('CPF is valid is', response, '.')
 
     # Passing a registration number of CPF (in string format):
-    dv=ret_CPF.return_cpf_dv('111444777')
+    dv=ret_CPF.get_cpf_dv('111444777')
     print('Correct DV: ', dv)
     # Output (in list): 'Correct DV:  [3, 5]'
 
