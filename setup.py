@@ -6,7 +6,7 @@ with open('README.rst') as _readme_file:
 setup(
     name='br_registrations',
     url='https://github.com/sliatecinos/br_registrations',
-    version='0.0.1',
+    version='0.0.10',
     author='Sliatecinos',
     author_email='sliatecinos@hotmail.com',
     packages=find_packages('br_registrations'),

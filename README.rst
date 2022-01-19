@@ -19,7 +19,7 @@ Originally developed and open-sourced at `Sliatecinos (GitHub) <https://github.c
 ----------------
 .. begin-installation
 
-``pip install br_registrations``
+``pip install br-registrations``
 
 .. end-installation
 
