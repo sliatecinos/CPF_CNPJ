@@ -1,16 +1,15 @@
-from setuptools import setup, find_packages
+import setuptools
 
 with open('README.rst') as _readme_file:
     readme = _readme_file.read()
 
-setup(
+setuptools.setup(
     name='br_registrations',
     url='https://github.com/sliatecinos/br_registrations',
-    version='0.0.10',
+    version='0.0.0.1',
     author='Sliatecinos',
     author_email='sliatecinos@hotmail.com',
-    packages=find_packages('br_registrations'),
-    package_dir={'': 'br_registrations'},
+    packages=['br_registrations'],
     license='MIT',
     description=(
         "A simple Python library containing functions that check Brazilian documents values"
