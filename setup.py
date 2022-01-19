@@ -1,15 +1,16 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.rst') as _readme_file:
     readme = _readme_file.read()
 
 setup(
-    name='CPF_CNPJ',
-    url='https://github.com/sliatecinos/CPF_CNPJ',
+    name='br_registrations',
+    url='https://github.com/sliatecinos/br_registrations',
     version='0.0.1',
     author='Sliatecinos',
     author_email='sliatecinos@hotmail.com',
-    maintainer='',
+    packages=find_packages('br_registrations'),
+    package_dir={'': 'br_registrations'},
     license='MIT',
     description=(
         "A simple Python library containing functions that check Brazilian documents values"
@@ -22,5 +23,5 @@ setup(
         'Programming Language :: Python :: 3.9',
 		'Programming Language :: Python :: 3.10',
     ],
-    python_requires='>=3.9',
+    python_requires='>=3.6',
 )

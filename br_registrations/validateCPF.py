@@ -1,17 +1,18 @@
 # _*_ coding: utf-8_*_
 
 
-class CNPJ:
+class CPF:
     """
     A simple Python library containing functions that check Brazilian documents values.
-    It is intended to make it easy to verify CNPJ numbers.
+    It is intended to make it easy to verify CPF numbers.
     """
-    def return_cnpj_dv(inscricao: str) -> list:
-        """Returns a list of last two numbers to registration number of CNPJ.
-        Ex: return_cnpj_dv('112223330001') -> 81 """
+    @staticmethod
+    def get_cpf_dv(inscricao: str) -> list:
+        """Returns a list of last two numbers to registration number of CPF.
+        Ex: return_cpf_dv('111444777') -> 35 """
         DV = []
-        ALINHAMENTO=[6,5,4,3,2,9,8,7,6,5,4,3,2]
-        inscricao = list(inscricao.zfill(12))
+        ALINHAMENTO=[11,10,9,8,7,6,5,4,3,2]
+        inscricao = list(inscricao.zfill(9))
         # retorna DV_1
         inscricao_1 = list(map(int, inscricao))
         somatorio=list(zip(inscricao_1, ALINHAMENTO[1:]))   # usa parte do alinhamento
@@ -30,17 +31,20 @@ class CNPJ:
         return DV
 
 
-    def valid_cnpj(cnpj: str) -> bool:
-        """Returns True (valid) or False (invalid) to a full-number of CNPJ.
-        Ex: valid_cnpj('11222333000181') -> True
+    @staticmethod
+    def valid_cpf(cnpj: str) -> bool:
+        """Returns True (valid) or False (invalid) to a full-number of CPF.
+        Ex: valid_cpf('11144477735') -> True
         """
         valida = False
         inscricao = cnpj[:-2]
         dv = list(map(int, cnpj[-2:]))
-        dv_teste=CNPJ.return_cnpj_dv(inscricao)
+        dv_teste=CPF.get_cpf_dv(inscricao)
         
         if dv_teste == dv:
             valida = True
 
         return valida
+
+
 

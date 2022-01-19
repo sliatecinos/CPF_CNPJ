@@ -1,4 +1,5 @@
-from CPF_CNPJ import validateCNPJ, validateCPF
+# _*_ coding: utf-8_*_
+from br_registrations import validateCNPJ, validateCPF
 
 # Validation test of registration CNPJ number
 # Instances the validation:
@@ -9,7 +10,7 @@ response=ret_CNPJ.valid_cnpj('11222333000181')
 print('CNPJ is valid is', response, '.')
 
 # Passing a registration number of CNPJ (in string format):
-dv=ret_CNPJ.return_cnpj_dv('112223330001')
+dv=ret_CNPJ.get_cnpj_dv('112223330001')
 print('Correct DV: ', dv)
 # Output (in list): 'Correct DV:  [8, 1]'
 
@@ -24,6 +25,6 @@ response=ret_CPF.valid_cpf('11144477735')
 print('CPF is valid is', response, '.')
 
 # Passing a registration number of CPF (in string format):
-dv=ret_CPF.return_cpf_dv('111444777')
+dv=ret_CPF.get_cpf_dv('111444777')
 print('Correct DV: ', dv)
 # Output (in list): 'Correct DV:  [3, 5]'
