@@ -26,7 +26,7 @@ Originally developed and open-sourced at `Sliatecinos (GitHub) <https://github.c
 .. end-installation
 
 **Basic Usage**
----------
+---------------
 .. begin-usage
 
 .. code:: python
@@ -71,7 +71,7 @@ Links
 -----
 * PyPi.org: `https://pypi.org/project/br-registrations <https://pypi.org/project/br-registrations/>`_
 
-* Código-fonte: `https://github.com/sliatecinos/br-registrations <BR-registrations_>`__
+* Source code: `https://github.com/sliatecinos/br-registrations <BR-registrations_>`__
 
 License
 -------

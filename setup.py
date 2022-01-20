@@ -1,12 +1,7 @@
 import setuptools
-import os
-import re
 
 name='br_registrations'
 git_repo = "https://github.com/sliatecinos/br_registrations"
-
-here = os.path.abspath(os.path.dirname(__file__))
-
 
 with open('README.rst') as _readme_file:
     readme = _readme_file.read()
@@ -33,5 +28,5 @@ setuptools.setup(
 		'Programming Language :: Python :: 3.10',
     ],
     python_requires='>=3.6',
-    keywords="cpf,cnpj,br,brazil,brasil"  # Optional
+    keywords="cpf,cnpj,br,brazil,brasil",  # Optional
 )
