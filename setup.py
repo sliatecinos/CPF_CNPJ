@@ -6,11 +6,11 @@ git_repo = "https://github.com/sliatecinos/br_registrations"
 with open('README.rst') as _readme_file:
     readme = _readme_file.read()
 
-exec(open('br_registrations/version.py').read())
+exec(open('./br_registrations/version.py').read())
 setuptools.setup(
     name=name,  # Required
     url=git_repo,   # Optional
-    version=__version__,  # Required
+    version='0.0.0.4',  # Required
     author='Sliatecinos',   # Optional
     author_email='sliatecinos@hotmail.com',   # Optional
     package_dir={'': 'br_registrations'},
@@ -28,5 +28,5 @@ setuptools.setup(
 		'Programming Language :: Python :: 3.10',
     ],
     python_requires='>=3.6',
-    keywords="cpf,cnpj,br,brazil,brasil",  # Optional
+    keywords="cpf,cnpj,br,brazil,brasil,validate",  # Optional
 )
