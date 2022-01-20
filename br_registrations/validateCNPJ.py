@@ -1,4 +1,11 @@
 # _*_ coding: utf-8_*_
+"""
+Author       : sliatecinos
+Created Time : 2021-01-19 20:57:00
+BR Registrations
+environments:
+
+"""
 
 
 class CNPJ:

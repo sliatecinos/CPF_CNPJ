@@ -1,15 +1,25 @@
 import setuptools
+import os
+import re
+
+name='br_registrations'
+git_repo = "https://github.com/sliatecinos/br_registrations"
+
+here = os.path.abspath(os.path.dirname(__file__))
+
 
 with open('README.rst') as _readme_file:
     readme = _readme_file.read()
 
+exec(open('br_registrations/version.py').read())
 setuptools.setup(
-    name='br_registrations',
-    url='https://github.com/sliatecinos/br_registrations',
-    version='0.0.0.1',
-    author='Sliatecinos',
-    author_email='sliatecinos@hotmail.com',
-    packages=['br_registrations'],
+    name=name,  # Required
+    url=git_repo,   # Optional
+    version=__version__,  # Required
+    author='Sliatecinos',   # Optional
+    author_email='sliatecinos@hotmail.com',   # Optional
+    package_dir={'': 'br_registrations'},
+    packages=setuptools.find_packages(where='br_registrations'),
     license='MIT',
     description=(
         "A simple Python library containing functions that check Brazilian documents values"
@@ -23,4 +33,5 @@ setuptools.setup(
 		'Programming Language :: Python :: 3.10',
     ],
     python_requires='>=3.6',
+    keywords="cpf,cnpj,br,brazil,brasil"  # Optional
 )

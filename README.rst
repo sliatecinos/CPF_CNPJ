@@ -25,7 +25,7 @@ Originally developed and open-sourced at `Sliatecinos (GitHub) <https://github.c
 
 .. end-installation
 
-**Usage**
+**Basic Usage**
 ---------
 .. begin-usage
 
