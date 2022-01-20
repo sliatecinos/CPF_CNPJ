@@ -61,6 +61,9 @@ Originally developed and open-sourced at `Sliatecinos (GitHub) <https://github.c
     print('Correct DV: ', dv)
     # Output (in list): 'Correct DV:  [3, 5]'
 
+    # View lib version:
+    import br_registrations as brr
+    print(brr.__version__)
 
 .. end-usage
 
