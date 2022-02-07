@@ -1,9 +1,11 @@
 # _*_ coding: utf-8_*_
+import re
 """
-Author       : sliatecinos
-Created Time : 2021-01-19 20:57:00
-BR Registrations
-environments:
+@Author       : sliatecinos
+@Created Time : 2021-01-19 20:57:00
+@Updated Time : 2021-02-07 02:20:00
+@BR Registrations
+    environments:
 
 """
 
@@ -14,9 +16,15 @@ class CNPJ:
     It is intended to make it easy to verify CNPJ numbers.
     """
     @staticmethod
-    def get_cnpj_dv(inscricao: str) -> list:
+    def get_cnpj_dv(inscricao: str, regex: bool=False) -> list:
         """Returns a list of last two numbers to registration number of CNPJ.
-        Ex: return_cnpj_dv('112223330001') -> 81 """
+        Ex: return_cnpj_dv('112223330001') -> 81 
+            return_cnpj_dv('46.293.332/0001') -> 02
+        """
+        if regex:
+            inscricao=re.findall("\d+", inscricao)
+            inscricao=''.join(inscricao)
+
         DV = []
         ALINHAMENTO=[6,5,4,3,2,9,8,7,6,5,4,3,2]
         inscricao = list(inscricao.zfill(12))
@@ -38,15 +46,20 @@ class CNPJ:
         return DV
 
     @staticmethod
-    def valid_cnpj(cnpj: str) -> bool:
+    def valid_cnpj(cnpj: str, regex: bool=False) -> bool:
         """Returns True (valid) or False (invalid) to a full-number of CNPJ.
         Ex: valid_cnpj('11222333000181') -> True
+            valid_cnpj('46.293.332/0001-02') -> True
         """
-        valida = False
+        if regex:
+            cnpj=re.findall("\d+", cnpj)
+            cnpj=''.join(cnpj)
+
         inscricao = cnpj[:-2]
         dv = list(map(int, cnpj[-2:]))
         dv_teste=CNPJ.get_cnpj_dv(inscricao)
         
+        valida = False
         if dv_teste == dv:
             valida = True
 

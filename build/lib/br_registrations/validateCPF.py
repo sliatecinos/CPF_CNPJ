@@ -1,9 +1,11 @@
 # _*_ coding: utf-8_*_
+import re
 """
 Author       : sliatecinos
 Created Time : 2021-01-19 20:57:00
+Updated Time : 2021-02-07 01:15:00
 BR Registrations
-environments:
+    environments:
 
 """
 
@@ -14,9 +16,12 @@ class CPF:
     It is intended to make it easy to verify CPF numbers.
     """
     @staticmethod
-    def get_cpf_dv(inscricao: str) -> list:
+    def get_cpf_dv(inscricao: str, regex: bool=False) -> list:
         """Returns a list of last two numbers to registration number of CPF.
         Ex: return_cpf_dv('111444777') -> 35 """
+        if regex:
+            inscricao=re.findall("\d+", inscricao)
+
         DV = []
         ALINHAMENTO=[11,10,9,8,7,6,5,4,3,2]
         inscricao = list(inscricao.zfill(9))
@@ -39,15 +44,18 @@ class CPF:
 
 
     @staticmethod
-    def valid_cpf(cnpj: str) -> bool:
+    def valid_cpf(cnpj: str, regex: bool=False) -> bool:
         """Returns True (valid) or False (invalid) to a full-number of CPF.
         Ex: valid_cpf('11144477735') -> True
         """
-        valida = False
+        if regex:
+            cnpj=re.findall("\d+", cnpj)
+
         inscricao = cnpj[:-2]
         dv = list(map(int, cnpj[-2:]))
         dv_teste=CPF.get_cpf_dv(inscricao)
         
+        valida = False
         if dv_teste == dv:
             valida = True
 
