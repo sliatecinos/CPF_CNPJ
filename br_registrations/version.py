@@ -2,9 +2,9 @@
 """
 Author       : sliatecinos
 Created Time : 2021-01-19 21:59:00
-Update
+Updated Time : 2021-02-11 02:00:00
 BR Registrations
 environments:
 
 """
-__version__ = '0.0.0.7'
+__version__ = '0.0.0.8'

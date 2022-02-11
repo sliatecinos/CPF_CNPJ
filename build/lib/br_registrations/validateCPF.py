@@ -3,7 +3,7 @@ import re
 """
 @Author       : sliatecinos
 @Created Time : 2021-01-19 20:57:00
-@Updated Time : 2021-02-07 01:15:00
+@Updated Time : 2021-02-11 02:10:00
 @BR Registrations
     environments:
 
@@ -56,11 +56,14 @@ class CPF:
             cpf=re.findall("\d+", cpf)
             cpf=''.join(cpf)
 
+        valida = False
+        if cpf == cpf[::-1]:
+            return valida
+
         inscricao = cpf[:-2]
         dv = list(map(int, cpf[-2:]))
         dv_teste=CPF.get_cpf_dv(inscricao)
         
-        valida = False
         if dv_teste == dv:
             valida = True
 

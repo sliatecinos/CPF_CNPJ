@@ -3,7 +3,7 @@ import re
 """
 @Author       : sliatecinos
 @Created Time : 2021-01-19 20:57:00
-@Updated Time : 2021-02-07 02:20:00
+@Updated Time : 2021-02-11 02:20:00
 @BR Registrations
     environments:
 
@@ -54,12 +54,15 @@ class CNPJ:
         if regex:
             cnpj=re.findall("\d+", cnpj)
             cnpj=''.join(cnpj)
+        
+        valida = False
+        if cnpj == cnpj[::-1]:
+            return valida
 
         inscricao = cnpj[:-2]
         dv = list(map(int, cnpj[-2:]))
         dv_teste=CNPJ.get_cnpj_dv(inscricao)
         
-        valida = False
         if dv_teste == dv:
             valida = True
 
