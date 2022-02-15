@@ -1,7 +1,7 @@
 Utilização
-=============
+***************
 
-.. _instalacao:
+.. _installation:
 
 Instalação
 =============
