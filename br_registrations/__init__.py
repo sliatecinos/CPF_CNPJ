@@ -1,3 +1,6 @@
+""""
+BR registrations - Biblioteca Python usada para validação de números de CNPJ/CPF usados no Brasil.
+"""
 from . import validateCNPJ
 from . import validateCPF
 
