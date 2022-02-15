@@ -7,12 +7,12 @@ sys.path.insert(0, os.path.abspath('../../'))
 # autodoc_mock_imports = ['br_registrations']
 
 # -- Project information ----------------------------------------
-project = 'br-registrations'
+project = 'br_registrations'
 copyright = '2022, sliatecinos'
 author = 'Sliatecinos'
 
-release = '0.1'
-version = '0.0.0.9'
+release = '0.1.0'
+# version = '0.0.0.9'
 
 # -- General configuration -------------------------------------
 extensions = [
