@@ -1,11 +1,12 @@
 # Configuration file for the Sphinx documentation builder.
+# -- Path setup information -------------------------------------
 import os
 import sys
 
 sys.path.insert(0, os.path.abspath('..'))
 autodoc_mock_imports = ['br_registrations']
-# -- Project information
 
+# -- Project information ----------------------------------------
 project = 'br-registrations'
 copyright = '2022, sliatecinos'
 author = 'Sliatecinos'
@@ -13,8 +14,7 @@ author = 'Sliatecinos'
 release = '0.1'
 version = '0.0.0.9'
 
-# -- General configuration
-
+# -- General configuration -------------------------------------
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
@@ -31,9 +31,8 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 
-# -- Options for HTML output
-
+# -- Options for HTML output -----------------------------------
 html_theme = 'sphinx_rtd_theme'
 
-# -- Options for EPUB output
+# -- Options for EPUB output -----------------------------------
 epub_show_urls = 'footnote'

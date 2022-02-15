@@ -15,9 +15,9 @@ Para usar, primeiro efetue a instalação com o pip:
 Obter a versão atual
 ---------------------
 
-Você pode usar ``.version`` function:
+Você pode usar ``br_registrations.version`` function:
 
-.. autofunction:: version
+.. .. autofunction:: br_registrations.version
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
@@ -27,7 +27,7 @@ will raise an exception.
 
 Por exemplo:
 
->>> import br_registrations
->>> br_registrations.validateCPF.CPF.valid_cpf('11111111111')
-'False'
+>>> import br_registrations as brr
+>>> brr.version
+'0.0.0.9'
 
