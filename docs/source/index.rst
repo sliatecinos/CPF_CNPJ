@@ -1,8 +1,7 @@
-Welcome to Lumache's documentation!
-===================================
+Documentação "BR registrations"
+==================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
+**BR registrations** (/br registrations/) é uma biblioteca Python para validação de números de CNPJ/CPF utilizados no Brasil.
 It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
 and offers a *simple* and *intuitive* API.
 
@@ -11,12 +10,12 @@ how to :ref:`installation` the project.
 
 .. note::
 
-   This project is under active development.
+   Este projeto está sob desenvolvimento.
 
-Contents
---------
+Conteúdo
+---------
 
 .. toctree::
 
-   usage
-   api
+   Utilização
+   API
