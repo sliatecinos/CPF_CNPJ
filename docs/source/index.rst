@@ -18,4 +18,5 @@ Conteúdo
 .. toctree::
 
    usage
+   methods
    api
