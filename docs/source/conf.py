@@ -1,5 +1,5 @@
 # Configuration file for the Sphinx documentation builder.
-
+autodoc_mock_imports = ['br_registrations']
 # -- Project information
 
 project = 'br-registrations'
