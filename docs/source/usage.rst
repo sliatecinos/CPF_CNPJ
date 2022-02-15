@@ -17,9 +17,9 @@ Para usar, primeiro efetue a instalação com o pip:
 Obter a versão atual
 =======================
 
-Você pode usar ``br_registrations.__version__`` para obter a versão atual:
+Você pode usar :py:func:`br_registrations.__version__` para obter a versão atual:
 
 >>> import br_registrations as brr
->>> brr.version
-'0.0.0.9'
+>>> brr.__version__
+'0.0.1.0'
 

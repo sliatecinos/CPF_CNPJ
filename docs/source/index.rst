@@ -1,12 +1,12 @@
-Documentação "BR registrations"
+BR registrations
 ==================================
 
-**BR registrations** (/br registrations/) é uma biblioteca Python para validação de números de CNPJ/CPF utilizados no Brasil.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**BR registrations** (/br-registrations/) é uma biblioteca Python para validação de números de CNPJ/CPF utilizados no Brasil.
+Seu código-fonte está disponível no `GitHub - br_registrations <https://github.com/sliatecinos/br_registrations>`_
+e pode ser instalada facilmente através do repositório *PyPi.org*.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Visite a seção dessa documentação :ref:`instalacao` para as informações de instalação, e
+sobre a forma de utilização em :doc:`methods`.
 
 .. note::
 

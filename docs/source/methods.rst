@@ -39,9 +39,10 @@ E para o CPF será:
 Parâmetro regex
 ================
 
-Em todos os métodos você tem a opção de parâmetro ``regex``, com valor-padrão **False**, 
-que permite uma pesquisa que contemple pontuações no meio da inscrição.
-Caso a pesquisa seja realizada sem esse valor será retornada uma __Exception__ pelo interpretador.
+Em todos os métodos há a opção de parâmetro ``regex``, com valor *default*: **False**, 
+ que permite uma pesquisa que contemple pontuações no meio da inscrição.
+ Caso a pesquisa seja realizada com esse argumento diferente de ``True`` será retornada uma
+ *Exception* pelo interpretador.
 
 .. .. autoexception:: br_registrations.InvalidKindError
 .. :py:func:`lumache.get_random_ingredients`
