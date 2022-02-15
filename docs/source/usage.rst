@@ -3,32 +3,32 @@ Usage
 
 .. _installation:
 
-Installation
-------------
+Instalação
+---------------
 
-To use Lumache, first install it using pip:
+Para usar, primeiro efetue a instalação com o pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   (.venv) $ pip install br-registrations
 
-Creating recipes
+Validar um CPF
 ----------------
 
 To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+you can use the ``validateCPF.CPF.valid_cpf`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+.. autofunction:: validateCPF.CPF.valid_cpf
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
 will raise an exception.
 
-.. autoexception:: lumache.InvalidKindError
+.. autoexception:: br_registrations.InvalidKindError
 
-For example:
+Por exemplo:
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+>>> import br_registrations
+>>> br_registrations.validateCPF.CPF.valid_cpf()
+'True'
 

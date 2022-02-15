@@ -4,4 +4,6 @@ API
 .. autosummary::
    :toctree: generated
 
-   br_registrations
+   validateCNPJ
+   validateCPF
+   version

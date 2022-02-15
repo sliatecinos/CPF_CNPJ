@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'BR registrations'
+copyright = '2022, sliatecinos'
+author = 'Sliatecinos'
 
 release = '0.1'
-version = '0.1.0'
+version = '0.0.0.9'
 
 # -- General configuration
 
