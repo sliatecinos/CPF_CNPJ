@@ -10,7 +10,7 @@ class CNPJ:
     @staticmethod
     def get_cnpj_dv(inscricao: str, regex=False):
         """Retorna uma lista com os últimos dois dígitos de um CNPJ.
-        Ex: return_cnpj_dv('112223330001') -> 81 
+        Ex: return_cnpj_dv('112223330001') -> 81
             return_cnpj_dv('46.293.332/0001') -> 02
 
         :param inscricao: os 12 primeiros dígs. de um CNPJ.
@@ -27,8 +27,8 @@ class CPF:
     @staticmethod
     def get_cpf_dv(inscricao: str, regex=False):
         """Retorna uma lista com os últimos dois dígitos de um CPF.
-        Ex: return_cpf_dv('111444777') -> 35 
-            return_cpf_dv('912.441.670') -> 37 
+        Ex: return_cpf_dv('111444777') -> 35
+            return_cpf_dv('912.441.670') -> 37
 
         :param inscricao: os 9 primeiros dígs. de um CPF.
         :type inscricao: str
@@ -41,7 +41,7 @@ class CPF:
 
 def version():
     """
-    retorna a versão atual da instalação de br-registrations.
+    retorna a versão atual da instalação de BR registrations.
 
     :param: N/A
     :type: N/A

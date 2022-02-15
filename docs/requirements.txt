@@ -1,4 +1,4 @@
 # docs/requirements.txt
 sphinx
 sphinx_rtd_theme
-br-registrations
+br_registrations

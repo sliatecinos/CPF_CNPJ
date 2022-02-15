@@ -2,4 +2,4 @@
 #
 # Name                    Version                   Build  Channel
 sphinx
-br-registrations
+br_registrations
