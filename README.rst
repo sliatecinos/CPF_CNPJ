@@ -1,13 +1,12 @@
 .. _BR-registrations:
 
 BR registrations
-=================
+================
+|build-status|
 
 .. |build-status| image:: https://img.shields.io/github/license/sliatecinos/br_registrations?style=plastic
     :alt: GitHub license   
     :target: https://github.com/sliatecinos/br_registrations/blob/master/LICENSE.txt
-
-|build-status|
 
 
 **Project description**

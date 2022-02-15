@@ -44,3 +44,4 @@ dv_2=cnpj.get_cnpj_dv('46.293.332/0001', True)
 print('Correct DV: ', dv_1)
 # Output #2 (in list): 'Correct DV:  [0, 2]'
 print('Correct DV: ', dv_2)
+
