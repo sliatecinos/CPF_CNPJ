@@ -10,7 +10,7 @@ how to :ref:`installation` the project.
 
 .. note::
 
-   Este projeto está sob desenvolvimento.
+   Este projeto ainda está sob desenvolvimento.
 
 Conteúdo
 ---------
