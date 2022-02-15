@@ -5,7 +5,7 @@ BR registrations - Biblioteca Python usada para validação de números de CNPJ/
 __version__ = "0.0.0.9"
 
 
-class InvalidKindError(Exception):
+class CPF():
     """Raised if the kind is invalid."""
     pass
 
