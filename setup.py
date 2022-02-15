@@ -17,7 +17,7 @@ with open('README.rst') as _readme_file:
 setup(
     name='br_registrations',  # Required
     url=git_repo,   # Optional
-    version='0.0.0.8',  # Required
+    version='0.0.0.9',  # Required
     author='Sliatecinos',   # Optional
     author_email='sliatecinos@hotmail.com',   # Optional
     packages=find_packages(),
@@ -28,5 +28,5 @@ setup(
     long_description=readme,
     classifiers=classifiers,
     keywords="cpf,cnpj,br,brazil,brasil,validate",  # Optional
-    install_requires=[''] 
+    install_requires=['']
 )

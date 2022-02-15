@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'BR registrations'
+project = 'br-registrations'
 copyright = '2022, sliatecinos'
 author = 'Sliatecinos'
 
