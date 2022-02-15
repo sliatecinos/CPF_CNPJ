@@ -3,23 +3,22 @@ import re
 """
 @Author       : sliatecinos
 @Created Time : 2021-01-19 20:57:00
-@Updated Time : 2021-02-11 02:10:00
+@Updated Time : 2021-02-15 00:00:00
 @BR Registrations
     environments:
-
 """
 
 
 class CPF:
     """
-    A simple Python library containing functions that check Brazilian documents values.
-    It is intended to make it easy to verify CPF numbers.
+    Uma classe Python simples de validação dos números de inscrição CPF.
     """
     @staticmethod
     def get_cpf_dv(inscricao: str, regex: bool=False) -> list:
-        """Returns a list of last two numbers to registration number of CPF.
-        Ex: return_cpf_dv('111444777') -> 35 
-            return_cpf_dv('912.441.670') -> 37 
+        """Retorna uma lista dos dois últimos números de uma inscrição CPF.
+        Exemplos:
+        :return cpf_dv: ('111444777') -> 35
+        :return cpf_dv: ('912.441.670') -> 37
         """
         if regex:
             inscricao=re.findall("\d+", inscricao)
@@ -48,9 +47,10 @@ class CPF:
 
     @staticmethod
     def valid_cpf(cpf: str, regex: bool=False) -> bool:
-        """Returns True (valid) or False (invalid) to a full-number of CPF.
-        Ex: valid_cpf('11144477735') -> True
-            valid_cpf('912.441.670-37') -> True
+        """Retorna True (válido) ou False (inválido) para um documento CPF.
+        Exemplos:
+        :return valid_cpf: ('11144477735') -> True
+        :return valid_cpf: ('912.441.670-37') -> True
         """
         if regex:
             cpf=re.findall("\d+", cpf)
@@ -63,11 +63,8 @@ class CPF:
         inscricao = cpf[:-2]
         dv = list(map(int, cpf[-2:]))
         dv_teste=CPF.get_cpf_dv(inscricao)
-        
+
         if dv_teste == dv:
             valida = True
 
         return valida
-
-
-
