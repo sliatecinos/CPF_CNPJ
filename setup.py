@@ -1,8 +1,6 @@
 from setuptools import setup, find_packages
 
 
-git_repo = "https://github.com/sliatecinos/br_registrations"
-
 classifiers = [
   'Development Status :: 3 - Alpha',
   'Intended Audience :: Education',
@@ -16,8 +14,8 @@ with open('README.rst') as _readme_file:
 
 setup(
     name='br_registrations',  # Required
-    url=git_repo,   # Optional
-    version='0.0.0.9',  # Required
+    url='https://pypi.org/project/br-registrations/',
+    version='0.0.1.0',  # Required
     author='Sliatecinos',   # Optional
     author_email='sliatecinos@hotmail.com',   # Optional
     packages=find_packages(),
@@ -28,5 +26,9 @@ setup(
     long_description=readme,
     classifiers=classifiers,
     keywords="cpf,cnpj,br,brazil,brasil,validate",  # Optional
-    install_requires=['']
+    install_requires=[''],
+    project_urls={
+        "Documentation" : "https://br-registrations.readthedocs.io/pt_BR/latest/",
+        "Source" : "https://github.com/sliatecinos/br_registrations"
+    }
 )

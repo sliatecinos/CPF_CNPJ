@@ -12,7 +12,7 @@ copyright = '2022, sliatecinos'
 author = 'Sliatecinos'
 
 release = '0.1.0'
-# version = '0.0.0.9'
+version = '0.0.1.0'
 
 # -- General configuration -------------------------------------
 extensions = [
