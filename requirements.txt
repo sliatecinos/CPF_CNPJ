@@ -1,3 +1,5 @@
 # packages in environment at .\anaconda\envs\br_registrations:
 #
 # Name                    Version                   Build  Channel
+sphinx
+br-registrations
