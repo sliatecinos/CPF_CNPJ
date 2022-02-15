@@ -12,13 +12,12 @@ Para usar, primeiro efetue a instalação com o pip:
 
    (.venv) $ pip install br-registrations
 
-Validar um CPF
-----------------
+Obter a versão atual
+---------------------
 
-To retrieve a list of random ingredients,
-you can use the ``validateCPF.CPF.valid_cpf`` function:
+Você pode usar ``.version`` function:
 
-.. autofunction:: br_registrations.__version__
+.. autofunction:: version
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`

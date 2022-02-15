@@ -4,4 +4,4 @@ API
 .. autosummary::
    :toctree: generated
 
-   "br-registrations"
+   br_registrations
