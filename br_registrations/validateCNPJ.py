@@ -16,9 +16,9 @@ class CNPJ:
     @staticmethod
     def get_cnpj_dv(inscricao: str, regex: bool=False) -> list:
         """Retorna uma lista dos dois últimos números de uma inscrição CNPJ.
-        Exemplos:
-        :return cnpj_dv: ('112223330001') -> 81
-        :return cnpj_dv: ('46.293.332/0001') -> 02
+        | Exemplos:
+        | :return cnpj_dv: ('112223330001') -> 81
+        | :return cnpj_dv: ('46.293.332/0001') -> 02
         """
         if regex:
             inscricao=re.findall("\d+", inscricao)
@@ -47,9 +47,9 @@ class CNPJ:
     @staticmethod
     def valid_cnpj(cnpj: str, regex: bool=False) -> bool:
         """Retorna True (válido) ou False (inválido) para um documento CNPJ.
-        Exemplos:
-        :return valid_cnpj: ('11222333000181') -> True
-        :return valid_cnpj: ('46.293.332/0001-02') -> True
+        | Exemplos:
+        | :return valid_cnpj: ('11222333000181') -> True
+        | :return valid_cnpj: ('46.293.332/0001-02') -> True
         """
         if regex:
             cnpj=re.findall("\d+", cnpj)

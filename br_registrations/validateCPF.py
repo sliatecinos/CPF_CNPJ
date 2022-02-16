@@ -16,9 +16,9 @@ class CPF:
     @staticmethod
     def get_cpf_dv(inscricao: str, regex: bool=False) -> list:
         """Retorna uma lista dos dois últimos números de uma inscrição CPF.
-        Exemplos:
-        :return cpf_dv: ('111444777') -> 35
-        :return cpf_dv: ('912.441.670') -> 37
+        | Exemplos:
+        | :return cpf_dv: ('111444777') -> 35
+        | :return cpf_dv: ('912.441.670') -> 37
         """
         if regex:
             inscricao=re.findall("\d+", inscricao)
@@ -48,9 +48,9 @@ class CPF:
     @staticmethod
     def valid_cpf(cpf: str, regex: bool=False) -> bool:
         """Retorna True (válido) ou False (inválido) para um documento CPF.
-        Exemplos:
-        :return valid_cpf: ('11144477735') -> True
-        :return valid_cpf: ('912.441.670-37') -> True
+        | Exemplos:
+        | :return valid_cpf: ('11144477735') -> True
+        | :return valid_cpf: ('912.441.670-37') -> True
         """
         if regex:
             cpf=re.findall("\d+", cpf)

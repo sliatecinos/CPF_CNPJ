@@ -26,7 +26,7 @@ Validar a inscrição
 
 Você pode realizar a validação de um número de inscrição com os métodos
 ``validateCNPJ.CNPJ.valid_cnpj`` ou ``validateCPF.CPF.valid_cpf``
-disponíveis.Estes métodos possuem o parâmetro opcional :ref:` parâmetro Regex`.
+disponíveis.Estes métodos possuem o parâmetro opcional :ref:`parâmetro Regex`.
 
 Por exemplo, para o CNPJ o método será:
 
