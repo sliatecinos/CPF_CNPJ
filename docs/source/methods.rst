@@ -46,5 +46,11 @@ que permite uma pesquisa que contemple pontuações no meio da inscrição.
 Caso a pesquisa seja realizada com esse argumento diferente de ``True`` será retornada uma
 ``*Exception*`` pelo interpretador.
 
-.. .. autoexception:: br_registrations.InvalidKindError
+Exemplo:
+
+>>> from br_registrations import validateCPF
+>>> response_2=cpf.valid_cpf('912.441.670-37', regex=True)
+>>> print('CPF "912.441.670-37" is valid is', response_2, '.')
+'CPF "912.441.670-37" is valid is True .'
+
 .. :py:func:`lumache.get_random_ingredients`
