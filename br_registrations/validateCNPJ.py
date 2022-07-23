@@ -3,7 +3,7 @@ import re
 """
 @Author       : sliatecinos
 @Created Time : 2021-01-19 20:57:00
-@Updated Time : 2021-02-15 00:00:00
+@Updated Time : 2021-02-28 00:00:00
 @BR Registrations
     environments:
 """
@@ -19,11 +19,11 @@ class CNPJ:
         Retorna uma lista dos dois últimos números de uma inscrição CNPJ.
 
         |  Exemplos:
-        |  :return cnpj_dv: ('112223330001') -> 81
-        |  :return cnpj_dv: ('46.293.332/0001') -> 02
+        |  :return cnpj_dv: ('112223330001') -> [8, 1]
+        |  :return cnpj_dv: ('46.293.332/0001') -> [0, 2]
         """
         if regex:
-            inscricao=re.findall("\d+", inscricao)
+            inscricao=re.findall(r"\d+", inscricao)
             inscricao=''.join(inscricao)
 
         DV = []
@@ -56,7 +56,7 @@ class CNPJ:
         |  :return valid_cnpj: ('46.293.332/0001-02') -> True
         """
         if regex:
-            cnpj=re.findall("\d+", cnpj)
+            cnpj=re.findall(r"\d+", cnpj)
             cnpj=''.join(cnpj)
 
         valida = False

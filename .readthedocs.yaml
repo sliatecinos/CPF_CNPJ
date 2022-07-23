@@ -13,3 +13,8 @@ python:
   install:
     - method: pip
       path: .
+
+# Build PDF & ePub
+formats:
+  - epub
+  - pdf

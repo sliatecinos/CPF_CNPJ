@@ -19,11 +19,11 @@ class CPF:
         Retorna uma lista dos dois últimos números de uma inscrição CPF.
 
         |  Exemplos:
-        |  :return cpf_dv: ('111444777') -> 35
-        |  :return cpf_dv: ('912.441.670') -> 37
+        |  :return cpf_dv: ('111444777') -> [3, 5]
+        |  :return cpf_dv: ('912.441.670') -> [3, 7]
         """
         if regex:
-            inscricao=re.findall("\d+", inscricao)
+            inscricao=re.findall(r"\d+", inscricao)
             inscricao=''.join(inscricao)
 
         DV = []
@@ -57,7 +57,7 @@ class CPF:
         |  :return valid_cpf: ('912.441.670-37') -> True
         """
         if regex:
-            cpf=re.findall("\d+", cpf)
+            cpf=re.findall(r"\d+", cpf)
             cpf=''.join(cpf)
 
         valida = False

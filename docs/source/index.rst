@@ -6,7 +6,7 @@ Seu código-fonte está disponível no `GitHub - br_registrations <https://githu
 e pode ser instalada facilmente através do repositório *PyPi.org*.
 
 Visite a seção dessa documentação :ref:`installation` para as informações de instalação, e
-sobre a forma de utilização em :doc:`methods`.
+sobre a forma de utilização em :doc:`metodos`.
 
 .. note::
 
@@ -17,6 +17,6 @@ Conteúdo
 
 .. toctree::
 
-   usage
-   methods
+   utilizacao
+   metodos
    api
