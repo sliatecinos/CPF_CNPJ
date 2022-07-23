@@ -88,7 +88,7 @@ Links
 -----
 * PyPi.org: `https://pypi.org/project/br-registrations <https://pypi.org/project/br-registrations/>`_
 
-* Source code: `https://github.com/sliatecinos/br-registrations <https://github.com/sliatecinos/br-registrations>`_
+* Source code: `https://github.com/sliatecinos/br_registrations <https://github.com/sliatecinos/br_registrations>`_
 
 License
 -------
